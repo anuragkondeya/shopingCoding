@@ -9,7 +9,7 @@ The simple code demonstates the solution for the following problem statement
 
 
 ## Configuration
-1. Gi clone project
+1. git clone project
 2. Added external dependency library Junit4 (if required)
 
 

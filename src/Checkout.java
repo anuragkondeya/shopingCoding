@@ -28,7 +28,7 @@ public class Checkout {
 
     /**
      * Constructor
-     * @param pricingRules
+     * @param pricingRules pricing rules object
      */
     public Checkout(PricingRules pricingRules) {
         this.products = pricingRules.getProductList();
@@ -38,7 +38,7 @@ public class Checkout {
 
     /**
      * Scan each item and compute total amount (without discount) so far
-     * @param item
+     * @param item item purchased by the customer
      */
     public void scan(String item) {
         Integer count = purchaseMap.get(item);
@@ -53,7 +53,7 @@ public class Checkout {
     /**
      * Compute discount by traversing the purchase list with every offer available
      * this way we can apply multiple offers on a single purchase
-     * @return
+     * @return actual bill
      */
     public float computeBill() {
         for (Offer offer : offers) {

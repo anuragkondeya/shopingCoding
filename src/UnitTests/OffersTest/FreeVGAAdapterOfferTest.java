@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 public class FreeVGAAdapterOfferTest {
     /**
      * Test if purchase fits offer
-     * @throws Exception
+     * @throws Exception asset if test fails
      */
     @Test
     public void test_computeOffer() throws Exception {
@@ -21,7 +21,7 @@ public class FreeVGAAdapterOfferTest {
 
     /**
      * Test if quantitiy is negative
-     * @throws Exception
+     * @throws Exception asset if test fails
      */
     @Test
     public void test_negative_offer() throws Exception {

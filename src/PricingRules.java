@@ -21,7 +21,7 @@ public class PricingRules {
 
     /**
      * Returns product list
-     * @return
+     * @return Returns product list
      */
     public HashMap<String,Product> getProductList() {
         return productList;
@@ -29,7 +29,7 @@ public class PricingRules {
 
     /**
      * Returns offer List
-     * @return
+     * @return Returns offer List
      */
     public Set<Offer> getOfferList() {
         return offerList;

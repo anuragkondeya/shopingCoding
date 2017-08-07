@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 public class BulkDiscountOfferTest {
     /**
      * Test if purchase is greater than offer minimum
-     * @throws Exception
+     * @throws Exception asset if test fails
      */
     @Test
     public void test_quantitiy_greaterThan_min() throws Exception {
@@ -22,7 +22,7 @@ public class BulkDiscountOfferTest {
 
     /**
      * Test if purchase is less than offer minimum
-     * @throws Exception
+     * @throws Exception asset if test fails
      */
     @Test
     public void test_quantitiy_lessThan_min() throws Exception {
@@ -33,7 +33,7 @@ public class BulkDiscountOfferTest {
 
     /**
      * Test if purchase is equal to offer minimum
-     * @throws Exception
+     * @throws Exception asset if test fails
      */
     @Test
     public void test_quantitiy_equal_min() throws Exception {
@@ -44,7 +44,7 @@ public class BulkDiscountOfferTest {
 
     /**
      * Test if purchase is 0
-     * @throws Exception
+     * @throws Exception asset if test fails
      */
     @Test
     public void test_quantitiy_no_quantity() throws Exception {
@@ -55,7 +55,7 @@ public class BulkDiscountOfferTest {
 
     /**
      * Test if quantity is negative
-     * @throws Exception
+     * @throws Exception asset if test fails
      */
     @Test
     public void test_quantitiy_negative_quantity() throws Exception {
@@ -66,7 +66,7 @@ public class BulkDiscountOfferTest {
 
     /**
      * Test to check if minimum quantity is set as negative
-     * @throws Exception
+     * @throws Exception asset if test fails
      */
     @Test
     public void test_quantitiy_negative_minium_quantity() throws Exception {

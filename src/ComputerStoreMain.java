@@ -48,7 +48,7 @@ public class ComputerStoreMain {
     /**
      * Prepares a list of products available in the store
      * The list can be prepared / modified form any external source (Sales Manager) without modifying the code
-     * @param products
+     * @param products list of products in the store
      */
     private static void getProductList(HashMap<String, Product> products) {
         products.put(SUPER_IPAD, new Product(SUPER_IPAD, "Super iPad", 549.99f));
@@ -60,10 +60,9 @@ public class ComputerStoreMain {
     /**
      * Prepares offer list available in the store
      * The list can be prepared / modified form any external source ((Sales Manager) without modifying the code
-     * @param productMap
-     * @param offers
+     * @param offers offers running in the store
      */
-    private static void getOfferList(HashMap<String, Product> productMap, Set<Offer> offers) {
+    private static void getOfferList(Set<Offer> offers) {
 
         Offer percentageDiscountOffer = new BuyXGetYOffer(3,2);
         percentageDiscountOffer.setOfferWith(APPLE_TV);
@@ -81,19 +80,19 @@ public class ComputerStoreMain {
 
     /**
      * Encapsulating product and offer list into pricing list object
-     * @return
+     * @return pricing rules object
      */
     private static PricingRules getPricingRules() {
         HashMap<String, Product> productMap = new HashMap<>();
         Set<Offer> offers = new HashSet<>();
         getProductList(productMap);
-        getOfferList(productMap,offers);
+        getOfferList(offers);
         return new PricingRules(productMap, offers);
     }
 
     /**
      * Main function to execute
-     * @param args
+     * @param args command line arguments
      */
     public static void main(String... args) {
         Checkout checkout = new Checkout(getPricingRules());

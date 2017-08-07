@@ -20,9 +20,9 @@ public class Product {
 
     /**
      * Constuctor
-     * @param sku
-     * @param name
-     * @param price
+     * @param sku sku of the product
+     * @param name name of the product
+     * @param price price of the product
      */
     public Product(String sku, String name,float price ){
         this.sku = sku;
@@ -32,7 +32,7 @@ public class Product {
 
     /**
      * Getter for price
-     * @return
+     * @return price
      */
     public float getPrice() {
         return price;

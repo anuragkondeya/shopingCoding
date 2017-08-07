@@ -1,5 +1,41 @@
 # shopingCoding
 The simple code demonstates the solution for the following problem statement
+
+## High level description of the code 
+1. The code takes product list and offer list as inputs
+2. Customer's shoppingList is prepared as per the purchases made
+3. The list is scanned again offers and discounts are calculated against the offer rules and items against which offer is running
+4. The final discounted price is displayed
+
+
+## Configuration
+1. Gi clone project
+2. Added external dependency library Junit4 (if required)
+
+
+## Unit tests
+Unit test are listed in UnitTest package
+
+## JavaDocs
+please refer /Docs folder in the source code
+
+## Execution
+1. Select from predefined use case or define a new use case. Assign the use case(String array) to shoppingList variable
+
+```java
+
+    private static String[] shopingList1 = {"atv", "atv", "atv", "vga"};
+   
+    private static String[] shopingList2 = {"atv", "ipd", "ipd", "atv", "ipd", "ipd", "ipd"};
+   
+    private static String[] shopingList3 = {"mbp", "vga", "ipd"};
+
+    private static final String[] shoppingList = shopingList3;  //assign use case to test
+```
+
+2. Run ComputerStoreMain.java as it contains main()
+
+
 ## Problem statement
 DiUS is starting a computer store. You have been engaged to build the checkout system. We will start with the following products in our catalogue
 
